@@ -1,0 +1,12 @@
+[Unit]
+Description=Update our zone file with a received IP once an hour
+
+[Service]
+Type=simple
+#StandardOutput=null
+#StandardError=journal
+##########################
+ExecStart=/usr/local/update-ip.sh
+
+[Install]
+WantedBy=multi-user.target

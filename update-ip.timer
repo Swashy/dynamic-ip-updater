@@ -1,0 +1,10 @@
+[Unit]
+Description=Update my ip in NDS once an hour
+
+[Timer]
+OnBootSec=1sec
+OnUnitActiveSec=1hr
+Persistent=true
+
+[Install]
+WantedBy=timers.target
