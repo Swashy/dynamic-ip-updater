@@ -15,6 +15,7 @@ currentIP=$(awk "NR==$iPLine" /etc/nsd/zones/somewhere.mudcrabz.net.conf | grep 
 #https://www.gnu.org/software/bash/manual/bashref.html#Conditional-Constructs
 if [ "$newIP" == "$currentIP" ]; then
     echo -e "IPs are the same! \n$currentIP"
+    echo -e "Nothing has changed."
   else
     echo -e "IP's are not the same!! \nnewIP: $newIP \ncurrentIP: $currentIP"
 
