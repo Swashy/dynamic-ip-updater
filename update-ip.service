@@ -6,7 +6,7 @@ Type=simple
 #StandardOutput=null
 #StandardError=journal
 ##########################
-ExecStart=/usr/local/bin/update-ip.sh
+ExecStart=/usr/local/update-ip.sh
 
 [Install]
 WantedBy=multi-user.target
